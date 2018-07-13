@@ -50,12 +50,11 @@ function fuckSpotifyAPI() {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-
-        console.log(data);
+        JSON.stringify(data);
+        console.log("Artist: " + data.tracks.items[0].album.artists[0].name + "\nTrack name: " + data.tracks.items[0].name + "\nTrack preview: " + data.tracks.items[0].preview_url + "\nAlbum name: " + data.tracks.items[0].album.name);
     });
-    //DATA BEING RETURNED WITH A 401. CANNOT GET THIS API TO RECOGNIZE MY KEY.
-    //SOME SORT OF STRANGE ERROR IN THE MODULE'S JSON FILE (MAYBE WHY IT'S NOT WORKING?)
-    break;
+
+   
 }
 
 function displayMovies() {
