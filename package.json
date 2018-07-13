@@ -1,8 +1,8 @@
 {
-  "name": "liri",
+  "name": "liri-node-app",
   "version": "1.0.0",
-  "description": "Packages for LIRI",
-  "main": "liri.js",
+  "description": "",
+  "main": "keys.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/cchysham/liri-node-app.git"
   },
-  "author": "Connor Hysham",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cchysham/liri-node-app/issues"
