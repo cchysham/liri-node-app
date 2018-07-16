@@ -16,7 +16,7 @@ switch (liriCommand) {
         break;
 
     case "spotify-this-song":
-        fuckSpotifyAPI();
+        displaySongs();
         break;
 
     case "movie-this":
@@ -45,7 +45,7 @@ function displayTweets() {
     });
 }
 
-function fuckSpotifyAPI() {
+function displaySongs() {
     spotify.search({ type: 'track', query: searchTerm }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
